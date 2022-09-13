@@ -8,19 +8,19 @@ jobs: #on peut appler nos jobs comme on veut
     runs-on: ubuntu-latest #défini sur quelle plateforme on lance le test
 
     steps: # on récupère les dépendances sur le github marketplace
-    - uses: actions/checkout@v3
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    #on met des -name pour nommer nos actions et donner des indications sur ce que font nos commandes
-    - name: Install dependencies 
-      - run: npm ci
+      #on met des -name pour nommer nos actions et donner des indications sur ce que font nos commandes
+      - name: Install dependencies 
+        run: npm ci
 
-    - name : Run unit tests
-      - run: npm test
+      - name : Run unit tests
+        run: npm test
 
-    - name: Build
-      - run: npm run build
+      - name: Build
+        run: npm run build
     
