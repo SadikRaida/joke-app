@@ -9,7 +9,6 @@ jobs: #on peut appler nos jobs comme on veut
 
     steps: # on récupère les dépendances sur le github marketplace
       - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
