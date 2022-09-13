@@ -24,7 +24,3 @@ jobs: #on peut appler nos jobs comme on veut
     - name: Build
       - run: npm run build
     
-    - name: Echo the name
-      run: | #le pipe est là pour pouvoir ecrire toute nos instructions les unes en dessous des autres
-        export NAME=$Barbozii
-        echo the $NAME
