@@ -21,6 +21,8 @@ jobs: #on peut appler nos jobs comme on veut
     - name : Run unit tests
       - run: npm test
 
+    - name: Build
+      - run: npm run build
     
     - name: Echo the name
       run: | #le pipe est là pour pouvoir ecrire toute nos instructions les unes en dessous des autres
